@@ -1,0 +1,302 @@
+/* 
+    Nome: José Félix Afonso Póvoa
+    Número de aluno: 1301913
+*/
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #606060;
+    line-height: 2;
+}
+
+header {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    background-color: #FF8200;
+    color: #FFFFFF;
+    box-shadow: 10px 10px 10px #222222, 20px 20px 20px #333333;
+}
+
+header p:first-child {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    font-size: 30pt;
+    font-weight: bolder;
+}
+
+header p:last-child {
+    display: block;
+    padding: 0px;
+    float: right;
+    font-size: 16pt;
+    font-weight: bolder;
+}
+
+header p:first-child::first-letter {
+    color: #FF0000;
+    font-size: 40pt;
+}
+
+header p:last-child b {
+    color: #FF0000;
+    font-size: 20pt;
+}
+
+.conteudo {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.tituloConteudo {
+    color: #FF8200;
+    text-shadow: 1px 1px 2px #000000;
+    text-align: center;
+}
+
+.subTituloConteudo {
+    color: #E0E0E0;
+    text-shadow: 1px 1px 2px #000000;
+    text-align: justify;
+    text-indent: 10px;
+}
+
+.bloco {
+    display: block;
+    width: 96%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px;
+    border-left:15px solid #FF8200;
+    background-color: #E0E0E0;
+    text-align: justify;
+}
+
+.bloco:hover {
+    border-left:15px solid #FF0000;
+    box-shadow: 10px 10px 10px #222222, 20px 20px 20px #333333;
+}
+
+.tituloBloco {
+    color: #FF8200;
+}
+
+.subTituloBloco {
+    color: #FF0000;
+}
+
+table, th, td {
+    border: 1px dotted #FF8200;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table {
+    width: 50%;
+}
+
+caption {
+    color: #FF8200;
+    font-weight: bold;
+}
+
+th {
+    background-color: #606060;
+    color: #FFFFFF;
+}
+
+td:hover {
+    background-color: #FF8200;
+}
+
+.menu {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #000000;
+    opacity: 0.9;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;   
+}
+
+.menu ul li {
+    float: left;
+}
+
+.menu ul li a {
+    display: block;
+    margin: 0px;
+    padding: 10px;
+    color: #FF8200;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    color: #FFFFFF;
+    background-color: #FF8200;
+}
+
+.menu ul li:hover ul {
+    display: block;
+}
+
+.menu ul li ul {
+    display: none;
+    position: absolute;  
+    bottom: 100%;
+    z-index: 1;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu ul li ul li {
+    display: block;
+    float: none;
+}
+
+.menu ul li ul li a {
+    display: block;
+    margin: 0px;
+    padding: 10px;
+    width: 100%;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #FF8200;
+}
+
+.menu ul li ul li a:hover {
+    color: #FF8200;
+    background-color: #000000;
+}
+
+footer {
+    display: inline-block;
+    margin: 0px;
+    margin-top: 50px;
+    padding: 5px;
+    padding-bottom: 100px;
+    width: 100%;  
+    background-color: #333333;
+    color: #FFFFFF;
+    line-height: 1.15;
+    font-size: 9pt;
+}
+
+.footerBloco {
+    display: block;
+    float: left;
+    width: 30%;
+    margin: 0px;
+    padding: 1%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.footerBloco a:link {
+    color: #FF8200;
+    text-decoration: none;
+}
+
+.footerBloco h5 {
+    font-size: 10pt;
+}
+
+.nota {
+    font-size: 9pt;
+}
+
+input[type=text] {
+    width: 50%;
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #FF8200;
+    font-size: 12pt;
+}
+
+input[type=text]:hover {
+    box-shadow: 5px 5px 10px #222222, 10px 10px 20px #333333;
+}
+
+input[type=reset], input[type=submit] {
+    width: 20%;
+    margin: 10px;
+    margin-left: 50px;
+    padding: 10px;
+    border: none;
+    background-color: #FF8200;
+    color: white;
+    font-size: 12pt;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type=reset]:hover, input[type=submit]:hover {
+    box-shadow: 5px 5px 10px #222222, 10px 10px 20px #333333;
+}
+
+footer input[type=text] {
+    width: 40%;
+    margin: 5px;
+    padding: 5px;
+    font-size: 9pt;
+}
+
+footer input[type=reset], footer input[type=submit] {
+    width: 40%;
+    margin: 5px;
+    padding: 5px;
+    font-size: 9pt;
+    font-weight: normal;
+}
+
+.imagemRede {
+    display: inline-block;
+}
+
+.imagemRede img {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+}
+
+.imagemMenu {
+    display: block;
+    float: left;
+    width: 48%;
+    margin: 1%;
+    margin-top: 50px;
+    padding: 0px;
+}
+
+.imagemMenu img {
+    width: 100%;
+}
+
+.imagemValidar {
+    display: inline-block;
+    width: 102px;
+    height: 36px;
+}
+
+.imagemValidar img {  
+    width: 100%;
+}
+
+
